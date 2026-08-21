@@ -467,6 +467,10 @@ ACAyarlar = {
     -- görünecek isim. Boş bırakırsanız "Amcaoglu-AC" kullanılır.
     markaAdi = "",
 
+    -- Markalama anahtarı. Yukarıdaki isme özeldir, destek ekibi verir.
+    -- Boş bırakırsanız veya isimle eşleşmezse varsayılan markalama kullanılır.
+    markaAnahtari = "",
+
     -- Ceza ekranında ve giriş mesajında görünecek kısa iletişim adresi.
     -- Boş bırakırsanız hiç link gösterilmez.
     markaLinki = "",
