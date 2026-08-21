@@ -286,7 +286,7 @@ ACAyarlar = {
 
     -- Hesap / kullanıcı adının saklandığı yerin adı
     -- Örnek:  hesapIsmiVerisi = "account:username",
-    hesapIsmiVerisi = "account_username",
+    hesapIsmiVerisi = "",
 
     -- Kayıtlarda oyuncunun bilgisayar seri numarası da yazsın mı?
     -- Ceza itirazlarında çok işinize yarar, açık bırakın.
@@ -311,7 +311,7 @@ ACAyarlar = {
     -- Örnek:  yetkiliVerisi = { ["admin:duty"] = true },
     -- Örnek:  yetkiliVerisi = { ["yetkiliMi"] = true },
     yetkiliVerisi = {
-        ["duty_admin"] = true,
+        ["yetkili"] = true,
     },
 
 
@@ -342,79 +342,22 @@ ACAyarlar = {
     -- hepsini tek tek yazmak yerine sadece başlangıcını yazmanız yeter.
     -- Örnek:  korumaliOnEkler = { "char:", "account:", "admin:", "para:" },
     korumaliOnEkler = {
+        -- Örnek (kendi ön eklerinizle değiştirin):
+        -- "char:",
+        -- "account:",
     },
+
 
     -- [A YOLU] Tek tek korunacak bilgiler.
     -- İsimlerin düzenli olması gerekmez, ne yazarsanız o korunur.
     -- Örnek:  korumaliAnahtarlar = { "oyuncubooster", "paraMiktari", "seviye" },
     korumaliAnahtarlar = {
-        "account_logged",
-        "account_id",
-        "account_username",
-        "account_email",
-        "account_register_date",
-        "characters",
-        "logged",
-        "dbid",
-        "id",
-
-        "admin_level",
-        "manager_level",
-        "helper_level",
-        "duty_admin",
-        "duty_helper",
-        "hidden_admin",
-        "admin_reports",
-        "admin_daily_reports",
-        "admin_jailed",
-        "admin_jail_time",
-        "admin_jail_served",
-        "admin_jail_timer",
-        "admin_jail_by",
-        "admin_jail_reason",
-
-        "money",
-        "bank_money",
-        "balance",
-        "totalbalance",
-        "vip",
-        "donater",
-        "rp_plus",
-        "promo_used",
-        "promo_code",
-
-        "faction",
-        "faction_rank",
-        "rank_order",
-        "ranks",
-        "duty",
-        "job",
-        "jobLevel",
-        "jobProgress",
-        "jobTruckingRuns",
-
-        "level",
-        "hours_played",
-        "minutes_played",
-        "total_hours_played",
-        "box_hours",
-        "box_count",
-        "max_characters",
-        "max_vehicles",
-        "max_interiors",
-
-        "car_license",
-        "bike_license",
-        "boat_license",
-        "identity_number",
-        "pd_jailed",
-        "pd_jail_id",
-        "pd_jail_time",
-        "pd_jail_cell",
-        "pd_jail_charges",
-        "restrained",
-        "restrained_item",
+        -- Örnek (kendi anahtarlarınızla değiştirin):
+        -- "para",
+        -- "yetkiSeviyesi",
+        -- "hesapId",
     },
+
 
     -- [B YOLU] Bunu true yaparsanız yukarıdaki iki listeye gerek kalmaz.
     -- Aşağıdaki "serbestAnahtarlar" listesi dışında hiçbir bilgiyi oyuncu
