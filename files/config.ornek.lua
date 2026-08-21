@@ -458,10 +458,17 @@ ACAyarlar = {
     guncellemeKanali = "stable",
 
     -- ================= MARKALAMA (ek hizmet) =================
-    -- Bu üç ayar yalnızca whitelabel lisansı olan sunucularda çalışır.
-    -- Lisansınız yoksa doldurmanızın hiçbir etkisi olmaz, varsayılan
-    -- Amcaoglu-AC markalaması kullanılmaya devam eder.
-    -- Lisans hakkında: https://discord.gg/amcaoglu
+    -- Aşağıdaki ayarlar yalnızca ÖZELLEŞTİRME ANAHTARI olan sunucularda
+    -- çalışır. Anahtar yoksa doldurmanızın hiçbir etkisi olmaz.
+    --
+    -- Anahtar girildiğinde Amcaoglu adı ve Discord adresleri oyuncuların
+    -- gördüğü HER YERDEN kalkar: giriş mesajı, kick/ban ekranı, ceza
+    -- duyurusu, yetkili uyarısı ve kendi Discord kayıt kanalınız.
+    --
+    -- Ceza metinlerinin kendisi değiştirilemez; yalnız isim, link, renk
+    -- ve hangi mesajın gösterileceği ayarlanır.
+    --
+    -- Anahtar için: https://discord.gg/amcaoglu
 
     -- Kick/ban ekranında, ceza duyurusunda ve yetkili uyarılarında
     -- görünecek isim. Boş bırakırsanız "Amcaoglu-AC" kullanılır.
@@ -481,21 +488,6 @@ ACAyarlar = {
 
     -- Ceza duyurusu tüm oyunculara chat'e düşsün mü?
     cezaDuyurusuGoster = true,
-
-    -- Kick / ban ekranında görünecek sebep. Boş bırakırsanız varsayılan
-    -- metin kullanılır. Ekranda "<marka> | <sebep> | <link>" biçiminde çıkar.
-    kickMesaji = "",
-    tempbanMesaji = "",
-    banMesaji = "",
-
-    -- Ceza duyurusu metinleri. Boş bırakırsanız varsayılan kullanılır.
-    -- Kullanabileceğiniz yer tutucular:
-    --   {oyuncu}  cezalandırılan oyuncunun adı
-    --   {saat}    geçici yasak süresi (yalnız tempbanDuyurusu için)
-    --   {marka}   yukarıdaki markaAdi
-    kickDuyurusu = "",
-    tempbanDuyurusu = "",
-    banDuyurusu = "",
 
     -- Duyuru ve giriş mesajının chat rengi (kırmızı, yeşil, mavi / 0-255).
     -- Satırı silerseniz varsayılan renk kullanılır.
