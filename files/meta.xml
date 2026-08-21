@@ -1,0 +1,30 @@
+<meta>
+    <download_priority_group>100</download_priority_group>
+
+    <script src="config.lua" type="server" />
+    <script src="lua/server/bundle.lua" type="server" />
+    <script src="lua/client/bundle.lua" type="client" cache="false" />
+
+    <export function="checkRateLimit" type="server" />
+    <export function="clearRateLimit" type="server" />
+    <export function="checkEvent" type="server" />
+    <export function="guardEvent" type="server" />
+    <export function="checkReplay" type="server" />
+    <export function="clearReplay" type="server" />
+    <export function="reportViolation" type="server" />
+    <export function="noteAuthorizedTeleport" type="server" />
+    <export function="getNetworkStatus" type="server" />
+    <export function="sameWorld" type="server" />
+    <export function="isNear" type="server" />
+    <export function="getPlayersNearPosition" type="server" />
+
+    <export function="registerProtectedEvent" type="server" />
+    <export function="registerManagedTransportResource" type="server" />
+    <export function="sendProtectedClientEvent" type="server" />
+    <export function="registerProtectedClientEvent" type="client" />
+    <export function="registerTransportCaller" type="client" />
+    <export function="unregisterTransportCaller" type="client" />
+    <export function="sendProtectedEvent" type="client" />
+
+    <min_mta_version client="1.6.0-9.21695" server="1.6.0-9.22459" />
+</meta>
