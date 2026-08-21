@@ -478,4 +478,26 @@ ACAyarlar = {
     -- Oyuncu bağlandıktan 10 saniye sonra chat'e düşen koruma mesajı
     -- gösterilsin mi? false yaparsanız hiçbir mesaj gönderilmez.
     girisMesajiGoster = true,
+
+    -- Ceza duyurusu tüm oyunculara chat'e düşsün mü?
+    cezaDuyurusuGoster = true,
+
+    -- Kick / ban ekranında görünecek sebep. Boş bırakırsanız varsayılan
+    -- metin kullanılır. Ekranda "<marka> | <sebep> | <link>" biçiminde çıkar.
+    kickMesaji = "",
+    tempbanMesaji = "",
+    banMesaji = "",
+
+    -- Ceza duyurusu metinleri. Boş bırakırsanız varsayılan kullanılır.
+    -- Kullanabileceğiniz yer tutucular:
+    --   {oyuncu}  cezalandırılan oyuncunun adı
+    --   {saat}    geçici yasak süresi (yalnız tempbanDuyurusu için)
+    --   {marka}   yukarıdaki markaAdi
+    kickDuyurusu = "",
+    tempbanDuyurusu = "",
+    banDuyurusu = "",
+
+    -- Duyuru ve giriş mesajının chat rengi (kırmızı, yeşil, mavi / 0-255).
+    -- Satırı silerseniz varsayılan renk kullanılır.
+    markaRengi = { 255, 194, 0 },
 }

@@ -4,23 +4,23 @@
   "files": [
     {
       "path": "config.ornek.lua",
-      "sha256": "0c7804ac795b2c1ae5714f6f748b34f39a59eeb2005951b12592a27ebd487fe3"
+      "sha256": "cd01388a168f302f51eb42d913134a0d132b4a3812f7edca9a0cabd742f12e1f"
     },
     {
       "path": "kurulum/sablon/transport_client.lua",
-      "sha256": "f9980a5d300cf93b93024a890525f38e3ad2c9cdfb1d1270e96ecb19cb20aff8"
+      "sha256": "7da7501b89b11ac40683a3742be50050266cc47879d9e09653f3bb9b868a8d53"
     },
     {
       "path": "kurulum/sablon/transport_server.lua",
-      "sha256": "788f02a36de4835f32d12fe34c4693083d83f79b495f0b0151be30620ea3c535"
+      "sha256": "5c79f7ee6dbafc2f69b27923c209aa166d60fb4a0bc431e83c1e97b15ffcac1a"
     },
     {
       "path": "lua/client/bundle.lua",
-      "sha256": "d9447efe423a709a047e1ea9ed98c47cbc9aff3337db9c0177a2a97c165346ca"
+      "sha256": "f657de5135a17c8c857c5b28662f93c45bb4ca87d5754219f60d5f869620093f"
     },
     {
       "path": "lua/server/bundle.lua",
-      "sha256": "48148daf118e16bbc314fb85d44984730a2ad7ee1713d1b8c78beae89c0a3034"
+      "sha256": "3cdb6e8eaa8fabbf633cf0c5aba138dab92eaa5e3b07e1b4957b6a7c0e451052"
     },
     {
       "path": "meta.xml",
