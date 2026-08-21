@@ -465,8 +465,11 @@ ACAyarlar = {
     -- gördüğü HER YERDEN kalkar: giriş mesajı, kick/ban ekranı, ceza
     -- duyurusu, yetkili uyarısı ve kendi Discord kayıt kanalınız.
     --
-    -- Ceza metinlerinin kendisi değiştirilemez; yalnız isim, link, renk
-    -- ve hangi mesajın gösterileceği ayarlanır.
+    -- Anahtar aktifken oyuncu girişindeki koruma mesajı otomatik olarak
+    -- hiç gönderilmez, ayrıca ayarlamanız gerekmez.
+    --
+    -- Ceza metinlerinin kendisi değiştirilemez; yalnız isim, link ve renk
+    -- ayarlanır.
     --
     -- Anahtar için: https://discord.gg/amcaoglu
 
@@ -478,18 +481,14 @@ ACAyarlar = {
     -- Boş bırakırsanız veya isimle eşleşmezse varsayılan markalama kullanılır.
     markaAnahtari = "",
 
-    -- Ceza ekranında ve giriş mesajında görünecek kısa iletişim adresi.
-    -- Boş bırakırsanız hiç link gösterilmez.
+    -- Kick/ban ekranında görünecek kısa iletişim adresi (kendi Discord
+    -- adresiniz gibi). Boş bırakırsanız hiç link gösterilmez.
     markaLinki = "",
-
-    -- Oyuncu bağlandıktan 10 saniye sonra chat'e düşen koruma mesajı
-    -- gösterilsin mi? false yaparsanız hiçbir mesaj gönderilmez.
-    girisMesajiGoster = true,
 
     -- Ceza duyurusu tüm oyunculara chat'e düşsün mü?
     cezaDuyurusuGoster = true,
 
-    -- Duyuru ve giriş mesajının chat rengi (kırmızı, yeşil, mavi / 0-255).
+    -- Ceza duyurusunun chat rengi (kırmızı, yeşil, mavi / 0-255).
     -- Satırı silerseniz varsayılan renk kullanılır.
     markaRengi = { 255, 194, 0 },
 }
