@@ -8,19 +8,19 @@
     },
     {
       "path": "kurulum/sablon/transport_client.lua",
-      "sha256": "44095a539a3998d132df9c1cdbd8ec07a39ddc07eaaaf1999d35e6ce0eb1ed55"
+      "sha256": "171959d420e9375adf1f33fcfa55c20e0533cc6f87387eeaa0b1dbf615793092"
     },
     {
       "path": "kurulum/sablon/transport_server.lua",
-      "sha256": "62751ebe284832b89af8e7d0e60a2ab7911bc821ad6b10898c25e0001cc4d5e2"
+      "sha256": "0777a547b275531264099a710cc84f8bd588fa7e21d54bb74136971d11c02ed3"
     },
     {
       "path": "lua/client/bundle.lua",
-      "sha256": "5bc2fa515b957d5855ba205f9a1cac58956879890d571cf569ad915fb686c9d9"
+      "sha256": "485bd024dac4fe7cc2114bb51fbee929cddf3be46cd5ea67650e250ced773f77"
     },
     {
       "path": "lua/server/bundle.lua",
-      "sha256": "074e65b45ee46fc2736d7b9d2e418f1e11c034119e8552eb56177ae5a90d97fc"
+      "sha256": "6277f7aa738f4713e62bab7cd0213a4e85d9030a7ea820dac268daff7c8af60b"
     },
     {
       "path": "meta.xml",
