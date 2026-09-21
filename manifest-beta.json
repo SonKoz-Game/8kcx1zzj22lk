@@ -1,5 +1,5 @@
 ﻿{
-    "version":  "1.1.37",
+    "version":  "1.1.38",
     "baseUrl":  "https://raw.githubusercontent.com/SonKoz-Game/8kcx1zzj22lk/main/files/",
     "files":  [
                   {
@@ -15,32 +15,16 @@
                       "sha256":  "9862113bed0439522091123d57a019985b56264dbf061009e411e2c95e3f9d1c"
                   },
                   {
-                      "path":  "kurulum/kur.bat",
-                      "sha256":  "a39b9c156c4f605f4191f212a022f3f7e00832396f24aa9f540f8873e20c86e0"
-                  },
-                  {
-                      "path":  "kurulum/kur.ps1",
-                      "sha256":  "72880f1d36c175289e35d515ba443753293bb5265505ceac592c7a8f58726c0d"
-                  },
-                  {
-                      "path":  "kurulum/sablon/transport_client.lua",
-                      "sha256":  "44a154076f713d5e2de2369657b00a6528ca970d83fd38edfec2ec320f7963ca"
-                  },
-                  {
-                      "path":  "kurulum/sablon/transport_server.lua",
-                      "sha256":  "fffed76ebb2185e0b3ffe88b7a7f682984a4c69f53d4e2f70f3cc1d3795b84b7"
-                  },
-                  {
                       "path":  "lua/client/bundle.lua",
-                      "sha256":  "61bce288fc89f5a5ae13bece81709ea3a0d928e30678477d7522a1fe12604a1a"
+                      "sha256":  "95f39899f08296fb3b5c4a220feaae223dbd46a4899d3bf6bd30274d1394ef3b"
                   },
                   {
                       "path":  "lua/server/bundle_001.lua",
-                      "sha256":  "0bd85cd68dc7c2a581906b0fdb40549f22af9adee402ccedf75fb6676e1c394e"
+                      "sha256":  "f5505404cffe97d6591196dbbde563e4efc02abc03f55a878a87754b407bf757"
                   },
                   {
                       "path":  "lua/server/bundle_002.lua",
-                      "sha256":  "64825ba9c00d7f56b559d4a3d7ded89d295a78604e7dc2716c64afb585fc503c"
+                      "sha256":  "c5540e8c0d6af60a82a9d1f51b292b88c985542fc0b1d7f820c905b05864b848"
                   },
                   {
                       "path":  "meta.xml",
