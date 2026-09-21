@@ -70,11 +70,13 @@ ACAyarlar = {
     -- aracın canı kendiliğinden doluyor mu, izinsiz nitro takılmış mı?
     aracKorumasi = true,
 
-    -- Otomobil, motor, BMX, monster ve quad icin mutlak yatay hiz tavani.
-    -- Koruma yalniz gercek surucuye ve arac zemindeyken bakar. Dusme/dikey hiz,
-    -- havalanma, inisten sonraki kisa sure ve dimension/interior gecisi sayilmaz.
+    -- Aracin handling dosyasinda tanimli son hizini uzun sure asmasini engeller.
+    -- Ozel araclarin maxVelocity degeri yuksekse kendi handling degeri esas alinir.
     aracHizKorumasi = true,
-    aracMaksimumHiz = 400,
+
+    -- Fizik disi ani/surekli hizlanmayi da ayri olarak engeller.
+    aracHizlanmaKorumasi = true,
+    aracMaksimumHizlanma = 180, -- km/sa / saniye
 
     -- Oyuncunun canı veya zırhı kendiliğinden doluyor mu?
     -- (Ölmezlik hilesi, can basma)
@@ -115,9 +117,10 @@ ACAyarlar = {
     -- Oyuncu, sunucudaki kendi bilgilerini (para, seviye, yetki gibi)
     -- kendi bilgisayarından değiştirmeye çalışıyor mu?
     -- Hangi bilgilerin korunacağını 6. bölümde belirleyeceksiniz.
-    -- Fabrika ayarında geçici olarak kapalıdır; açılana kadar hiçbir
-    -- elementData değişikliği geri alınmaz veya bu modülden raporlanmaz.
-    elementDataKorumasi = false,
+    -- Yetki, kimlik ve para anahtarları bu ayardan bağımsız olarak daima
+    -- server otoritesindedir. Bu ayar ayrıca öğrenilen diğer server
+    -- anahtarlarını da istemci yazımına karşı korur.
+    elementDataKorumasi = true,
 
     -- Hangi verinin korunacağını koruma KENDİSİ öğrensin mi?
     --
@@ -182,29 +185,6 @@ ACAyarlar = {
     -- kendi verisiyle sistemi kandıramaz.
     degerKorumasi = true,
 
-    -- Öğrenme tamamlandıktan sonra aykırı sayısal değer otomatik engellensin
-    -- mi? Öğrenme sırasında hiçbir paket düşmez;
-    -- müşterinin rapor okuyup sonradan açması gerekmez.
-    degerKorumasiEngelle = true,
-
-    -- Değer korumasının HİÇ bakmayacağı event'ler.
-    --
-    -- Bazı event'ler tasarımı gereği oyuncunun kendi girdiği serbest sayıları
-    -- taşır (ayar penceresi, konum/rotasyon düzenleyici, kişiselleştirme).
-    -- Böyle bir argümanın kararlı bir "normal aralığı" olmaz; koruma er ya da
-    -- geç onu aykırı sayıp paketi düşürür ve özellik sessizce bozulur.
-    --
-    -- Log'da şu satırı sürekli aynı event için görüyorsanız ve o event
-    -- gerçekten oyuncunun girdiği bir sayıyı taşıyorsa buraya ekleyin:
-    --   code=event_argument_outlier ... blocked=true event=<ad>
-    --
-    -- ÖNEMLİ: buraya eklediğiniz event'in argümanlarını artık anti-cheat
-    -- doğrulamaz. O event'i kendi resource'unuzda server tarafında
-    -- doğrulamanız gerekir (tip, aralık, sahiplik).
-    degerKorumasiHaricEventler = {
-        -- "createWeaponModel",
-    },
-
     -- Client -> server event spam korumasi. AC her eventin normal hizini en az
     -- eventHizOgrenmeOyuncusu farkli serialdan kendisi ogrenir. Hizli silah
     -- degistirme, E/Q veya yogun UI eventleri ayri liste istemeden kendi normal
@@ -221,8 +201,12 @@ ACAyarlar = {
     eventHizToleransYuzdesi = 100, -- normal tepenin ustune yuzde 100 pay
     eventHizAniPay = 4,            -- kisa paket yigilmalarina ek adet payi
     eventHizDogrulamaPenceresi = 2,
-    eventHizOgrenmeOncesiTavan = 120,
-    eventHizGenelTavan = 400,
+    eventHizOgrenmeOncesiTavan = 12,
+    eventHizGenelTavan = 120,
+
+    -- /me gibi server komutlarının tek karede onlarca kez çalıştırılmasını
+    -- engeller. Normal kullanım etkilenmez; aşırı taşmada oyuncu atılır.
+    komutSpamKorumasi = true,
 
     -- Buyuk ve maksimum korumali client dosyalari icin guvenli baslangic
     -- pencereleri (saniye). Sureyi client belirlemez; hileci sahte "yukleniyor"
@@ -367,6 +351,10 @@ ACAyarlar = {
     -- bazı bilgileri oyuncu tarafından yazıyor olabilir. Onları listeye
     -- eklemezseniz o özellikler çalışmaz. (Oyuncu ceza almaz, o bilgi
     -- sadece kaydedilmez.)
+    -- kur.bat bütün etkin client kaynaklarını eksiksiz okuyabildiğinde
+    -- serbestAnahtarlar listesini üretip bu ayarı otomatik true yapar.
+    -- Okunamayan veya çözülemeyen dinamik kullanım varsa sistemi bozmamak
+    -- için false bırakır ve dosya adını kurulum raporunda gösterir.
     tumVerileriKoru = false,
 
     -- Oyuncunun kendi üzerinde değiştirmesinde sakınca olmayan bilgiler.

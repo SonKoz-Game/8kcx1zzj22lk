@@ -1,30 +1,50 @@
-{
-  "version": "1.1.0",
-  "baseUrl": "https://raw.githubusercontent.com/SonKoz-Game/8kcx1zzj22lk/main/files/",
-  "files": [
-    {
-      "path": "config.ornek.lua",
-      "sha256": "524053300c2e9d4609d8f126d431efeebcd5527d41ffb2aa2d899c565abe8f25"
-    },
-    {
-      "path": "kurulum/sablon/transport_client.lua",
-      "sha256": "171959d420e9375adf1f33fcfa55c20e0533cc6f87387eeaa0b1dbf615793092"
-    },
-    {
-      "path": "kurulum/sablon/transport_server.lua",
-      "sha256": "0777a547b275531264099a710cc84f8bd588fa7e21d54bb74136971d11c02ed3"
-    },
-    {
-      "path": "lua/client/bundle.lua",
-      "sha256": "485bd024dac4fe7cc2114bb51fbee929cddf3be46cd5ea67650e250ced773f77"
-    },
-    {
-      "path": "lua/server/bundle.lua",
-      "sha256": "6277f7aa738f4713e62bab7cd0213a4e85d9030a7ea820dac268daff7c8af60b"
-    },
-    {
-      "path": "meta.xml",
-      "sha256": "f3cf3caf8e8181748490a0ec8d1095f9b99b50ca2b4047e7d62c0be14541bcac"
-    }
-  ]
+﻿{
+    "version":  "1.1.37",
+    "baseUrl":  "https://raw.githubusercontent.com/SonKoz-Game/8kcx1zzj22lk/main/files/",
+    "files":  [
+                  {
+                      "path":  "assets/fonts/SF-Regular.otf",
+                      "sha256":  "1b7b9796494e5b16467460c8b26e9fdca347f0383fbfc92feae0447586b12c15"
+                  },
+                  {
+                      "path":  "assets/fonts/SF-Semibold.otf",
+                      "sha256":  "78e466c8c394bf240fe86292184106eca645a25c8d112d02f2e2c0257ddc53fd"
+                  },
+                  {
+                      "path":  "config.ornek.lua",
+                      "sha256":  "9862113bed0439522091123d57a019985b56264dbf061009e411e2c95e3f9d1c"
+                  },
+                  {
+                      "path":  "kurulum/kur.bat",
+                      "sha256":  "a39b9c156c4f605f4191f212a022f3f7e00832396f24aa9f540f8873e20c86e0"
+                  },
+                  {
+                      "path":  "kurulum/kur.ps1",
+                      "sha256":  "72880f1d36c175289e35d515ba443753293bb5265505ceac592c7a8f58726c0d"
+                  },
+                  {
+                      "path":  "kurulum/sablon/transport_client.lua",
+                      "sha256":  "44a154076f713d5e2de2369657b00a6528ca970d83fd38edfec2ec320f7963ca"
+                  },
+                  {
+                      "path":  "kurulum/sablon/transport_server.lua",
+                      "sha256":  "fffed76ebb2185e0b3ffe88b7a7f682984a4c69f53d4e2f70f3cc1d3795b84b7"
+                  },
+                  {
+                      "path":  "lua/client/bundle.lua",
+                      "sha256":  "61bce288fc89f5a5ae13bece81709ea3a0d928e30678477d7522a1fe12604a1a"
+                  },
+                  {
+                      "path":  "lua/server/bundle_001.lua",
+                      "sha256":  "0bd85cd68dc7c2a581906b0fdb40549f22af9adee402ccedf75fb6676e1c394e"
+                  },
+                  {
+                      "path":  "lua/server/bundle_002.lua",
+                      "sha256":  "64825ba9c00d7f56b559d4a3d7ded89d295a78604e7dc2716c64afb585fc503c"
+                  },
+                  {
+                      "path":  "meta.xml",
+                      "sha256":  "63803a0c8cee37ca33c312970166e97d2dd7ff9f0b0840f503d2379c88d7b24d"
+                  }
+              ]
 }

@@ -1,9 +1,13 @@
 <meta>
     <download_priority_group>100</download_priority_group>
 
+        <script src="lua/server/bundle_001.lua" type="server" />
+    <script src="lua/server/bundle_002.lua" type="server" />
     <script src="config.lua" type="server" />
-    <script src="lua/server/bundle.lua" type="server" />
     <script src="lua/client/bundle.lua" type="client" cache="false" />
+
+    <file src="assets/fonts/SF-Regular.otf" />
+    <file src="assets/fonts/SF-Semibold.otf" />
 
     <export function="checkRateLimit" type="server" />
     <export function="clearRateLimit" type="server" />
@@ -19,6 +23,7 @@
     <export function="getPlayersNearPosition" type="server" />
 
     <export function="registerProtectedEvent" type="server" />
+    <export function="registerProtectedEventListener" type="server" />
     <export function="registerManagedTransportResource" type="server" />
     <export function="sendProtectedClientEvent" type="server" />
     <export function="registerProtectedClientEvent" type="client" />
