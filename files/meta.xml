@@ -31,5 +31,5 @@
     <export function="unregisterTransportCaller" type="client" />
     <export function="sendProtectedEvent" type="client" />
 
-    <min_mta_version client="1.6.0-9.21695" server="1.6.0-9.22459" />
+    <min_mta_version client="1.6.0-9.22815" server="1.6.0-9.22815" />
 </meta>
