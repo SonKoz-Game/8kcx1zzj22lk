@@ -1,5 +1,5 @@
 ﻿{
-    "version":  "1.1.40",
+    "version":  "1.1.42",
     "baseUrl":  "https://raw.githubusercontent.com/SonKoz-Game/8kcx1zzj22lk/main/files/",
     "files":  [
                   {
@@ -16,15 +16,15 @@
                   },
                   {
                       "path":  "lua/client/bundle.lua",
-                      "sha256":  "dcb4e05d8fb52468ba522ca5e174296939ffcfbb63b1589c20aa278f9b2fe01d"
+                      "sha256":  "03fc24c66082b23e91b08dfd23f78eaa60793c9462e754256422ced8dae14d20"
                   },
                   {
                       "path":  "lua/server/bundle_001.lua",
-                      "sha256":  "987a830e63d069faf46ca1b654e44324017b3c84c700c56a0467ec0a99c54943"
+                      "sha256":  "921c62dbc8278b8638368a0a0d738354e9acaca9ef4fb939774b993e0e46f5fa"
                   },
                   {
                       "path":  "lua/server/bundle_002.lua",
-                      "sha256":  "bae1c35d78ff85e0ca0b5a14db07da074a5c439c867750766d0720c577d1943e"
+                      "sha256":  "3ac8b34e880c2eedeac65310b3b3bf4f4919fc20ffd41af76fe94ce5779f9bed"
                   },
                   {
                       "path":  "meta.xml",
