@@ -158,6 +158,27 @@ ACAyarlar = {
     -- Oyuncu, anti-cheat'in kendi dosyasını kapatmaya çalışıyor mu?
     clientKorumasi = true,
 
+    glitchDurumlari = {
+        quickreload = false,
+        fastmove = false,
+        fastfire = false,
+        crouchbug = false,
+        fastsprint = false,
+        baddrivebyhitbox = false,
+        quickstand = false,
+    },
+
+    ozelDunyaDurumlari = {
+        aircars = false,
+        hovercars = false,
+        extrabunny = false,
+        extrajump = false,
+        snipermoon = false,
+        ignorefirestate = false,
+        extraairresistance = true,
+        underworldwarp = true,
+    },
+
     -- Oyuncu, oyuna dışarıdan hile kodu sokuyor mu?
     -- (Çalışması için üstteki clientKorumasi açık olmalı.)
     injectorKorumasi = true,
