@@ -46,6 +46,7 @@
         <right name="function.kickPlayer" access="true" />
         <right name="function.banPlayer" access="true" />
         <right name="function.stopResource" access="true" />
+        <right name="function.fileOpen" access="true" />
         <right name="general.ModifyOtherObjects" access="true" />
     </aclrequest>
 
