@@ -3,6 +3,17 @@
 
         <script src="lua/server/bundle_001.lua" type="server" />
     <script src="lua/server/bundle_002.lua" type="server" />
+    <script src="lua/server/bundle_003.lua" type="server" />
+    <script src="lua/server/bundle_004.lua" type="server" />
+    <script src="lua/server/bundle_005.lua" type="server" />
+    <script src="lua/server/bundle_006.lua" type="server" />
+    <script src="lua/server/bundle_007.lua" type="server" />
+    <script src="lua/server/bundle_008.lua" type="server" />
+    <script src="lua/server/bundle_009.lua" type="server" />
+    <script src="lua/server/bundle_010.lua" type="server" />
+    <script src="lua/server/bundle_011.lua" type="server" />
+    <script src="lua/server/bundle_012.lua" type="server" />
+    <script src="lua/server/bundle_013.lua" type="server" />
     <script src="config.lua" type="server" />
     <script src="lua/client/bundle.lua" type="client" cache="false" />
 
@@ -30,6 +41,13 @@
     <export function="registerTransportCaller" type="client" />
     <export function="unregisterTransportCaller" type="client" />
     <export function="sendProtectedEvent" type="client" />
+
+    <aclrequest>
+        <right name="function.kickPlayer" access="true" />
+        <right name="function.banPlayer" access="true" />
+        <right name="function.stopResource" access="true" />
+        <right name="general.ModifyOtherObjects" access="true" />
+    </aclrequest>
 
     <min_mta_version client="1.6.0-9.22815" server="1.6.0-9.22815" />
 </meta>

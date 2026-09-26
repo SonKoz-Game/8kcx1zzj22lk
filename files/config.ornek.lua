@@ -143,44 +143,43 @@ ACAyarlar = {
 
     -- Yalnızca server'ın yazdığı elementData anahtarları.
     --
-    -- BU LİSTEYİ ELLE DOLDURMAYIN. kurulum/kur.ps1 çalıştığında meta.xml'e
-    -- bakıp hangi script'in client hangisinin server olduğunu ayırır ve
-    -- yalnız server script'lerinde setElementData ile yazılan anahtarları
-    -- buraya kendisi yazar. Kurulumu tekrar çalıştırırsanız blok yenilenir.
+    -- BU LİSTEYİ DOLDURMANIZ GEREKMEZ. Anti-cheat her açılışta sunucudaki
+    -- bütün resource'ların script'lerini kendisi okur; hangi anahtarın
+    -- yalnız server tarafından yazıldığını otomatik bulur ve korumaya alır.
+    -- Buraya yazdıklarınız bu otomatik listeye EK güvencedir.
     --
     -- Bu anahtarlara client'tan gelen değişiklik geri alınır. Ceza üretmez:
     -- aynı anahtara 3 farklı oyuncudan yazım gelirse meşru kullanım kabul
-    -- edilir ve koruma kendiliğinden kalkar. Yani kurulumun yanlış tahmin
-    -- etmesi kimseyi mağdur etmez.
+    -- edilir ve koruma kendiliğinden kalkar.
     sunucuVeriAnahtarlari = {
     },
 
     -- Oyuncu, anti-cheat'in kendi dosyasını kapatmaya çalışıyor mu?
     clientKorumasi = true,
 
-    glitchDurumlari = {
-        quickreload = false,
-        fastmove = false,
-        fastfire = false,
-        crouchbug = false,
-        fastsprint = false,
-        baddrivebyhitbox = false,
-        quickstand = false,
+    -- Sunucunuzun glitch ve özel dünya ayarları (quickreload, crouchbug,
+    -- extraairresistance gibi) ARTIK EZİLMEZ: sizin script'leriniz ne
+    -- ayarladıysa o geçerlidir. Hileyle client'ta açılan uçan araç, suda
+    -- giden araç ve yüksek zıplama gibi durumlar sunucunun gerçek ayarına
+    -- göre yine otomatik düzeltilir.
+    --
+    -- Bir değeri ZORLA sabit tutmak isterseniz buraya yazın. Boş bırakmak
+    -- önerilir.
+    -- Örnek:  zorunluGlitchDurumlari = { fastsprint = false },
+    zorunluGlitchDurumlari = {
     },
 
-    ozelDunyaDurumlari = {
-        aircars = false,
-        hovercars = false,
-        extrabunny = false,
-        extrajump = false,
-        snipermoon = false,
-        ignorefirestate = false,
-        extraairresistance = true,
-        underworldwarp = true,
+    -- Örnek:  zorunluDunyaDurumlari = { aircars = false, hovercars = false },
+    zorunluDunyaDurumlari = {
     },
 
     -- Oyuncu, oyuna dışarıdan hile kodu sokuyor mu?
     -- (Çalışması için üstteki clientKorumasi açık olmalı.)
+    --
+    -- Bir resource'un meta.xml'inde <script> olarak tanımlı OLMAYAN bir
+    -- dosyadan çalışan kod hile sayılır ve oyuncu atılır. Client
+    -- script'lerinizi <file> ile gönderip loadstring ile çalıştırmayın;
+    -- <script src="..." type="client" /> olarak tanımlayın.
     injectorKorumasi = true,
 
     -- Oyuncunun GTA klasöründe sahte dosya veya değiştirilmiş oyun
@@ -229,11 +228,46 @@ ACAyarlar = {
     -- engeller. Normal kullanım etkilenmez; aşırı taşmada oyuncu atılır.
     komutSpamKorumasi = true,
 
+    -- EVENT GÜVENLİK DUVARI
+    --
+    -- Sunucunuzdaki script'lere HİÇ DOKUNMADAN, oyuncudan sunucuya giden her
+    -- isteği (triggerServerEvent) sunucu tarafında denetler:
+    --   • Başka oyuncunun adına istek gönderme (sahte source / parametre)
+    --   • Sadece yetkililerin kullandığı istekleri yetkisiz tetikleme
+    --   • Sunucuyu çökerten bozuk sayılar ve dev paketler
+    -- Neyin normal olduğunu script'lerinizi okuyarak ve oyunculardan
+    -- öğrenerek kendisi belirler; liste tutmanız gerekmez.
+    eventGuvenlikDuvari = true,
+
+    -- "otomatik" = şüpheli isteği engeller, kesinleşince cezalandırır.
+    -- "rapor"    = hiçbir isteği engellemez, yalnız kayda yazar.
+    -- "kapali"   = bu denetim çalışmaz.
+    eventGuvenlikModu = "otomatik",
+
+    -- TEHLİKELİ İŞLEM KORUMASI
+    --
+    -- Bir oyuncunun isteği sunucuda şu işlemlere yol açarsa işlemi ANINDA
+    -- durdurur (script'iniz yetki kontrolünü unutmuş olsa bile):
+    --   • SQL injection (veritabanına zararlı sorgu)
+    --   • Oyuncunun gönderdiği metnin kod olarak çalıştırılması
+    --   • Yetkisiz oyuncunun başkasını atması / yasaklaması
+    --   • Başka oyuncu adına komut çalıştırma (executeCommandHandler)
+    --   • ACL / yetki / hesap değişikliği, başkasına admin verisi yazma
+    --   • Negatif fiyatla para kazanma, dosya yolu kaçırma
+    tehlikeliIslemKorumasi = true,
+
+    -- Anti-cheat açılışta sunucudaki script'leri okuyarak kendini
+    -- yapılandırsın mı? (Hangi verinin meşru, hangi isteğin kime ait
+    -- olduğunu buradan öğrenir.) Kapatmanız önerilmez.
+    kaynakTaramasi = true,
+
     -- Buyuk ve maksimum korumali client dosyalari icin guvenli baslangic
-    -- pencereleri (saniye). Sureyi client belirlemez; hileci sahte "yukleniyor"
-    -- mesaji gondererek uzatamaz. Yalniz MTA'nin resource baslatma olayi ve
-    -- dogrulanmis transport oturumu kabul edilir.
+    -- penceresi (saniye). Sureyi client belirlemez; hileci sahte "yukleniyor"
+    -- mesaji gondererek uzatamaz.
     clientBaslangicBeklemeSuresi = 600,
+
+    -- Asagidaki uc ayar yalniz eski (1.x) kurulumdan kalan transport
+    -- entegrasyonu olan sunucularda kullanilir. Yeni kurulumda etkisizdir.
     transportElSikismaSuresi = 60,
     transportKuyrukBeklemeSuresi = 300,
 
@@ -316,8 +350,33 @@ ACAyarlar = {
     -- Örnek:  yetkiliVerisi = { ["admin:duty"] = true },
     -- Örnek:  yetkiliVerisi = { ["yetkiliMi"] = true },
     yetkiliVerisi = {
-        ["yetkili"] = true,
     },
+
+    -- Yetkililerin admin SEVİYESİNİ tutan elementData adları.
+    --
+    -- Anti-cheat bunu genelde kendisi bulur: MTA ACL'deki Admin/Moderator
+    -- grupları ile "admin_level", "user:admin", "adminLevel" gibi yaygın
+    -- adları zaten tanır, ayrıca script'lerinizi okuyup kendi adlarınızı
+    -- yakalar. Sunucu açılışında konsolda "yetkiliTespiti=belirsiz" yazarsa
+    -- admin seviyenizin tutulduğu adı buraya ekleyin.
+    -- Örnek:  yetkiliAnahtarlari = { "yetkiSeviye", "adminRutbe" },
+    yetkiliAnahtarlari = {
+    },
+
+    -- Oyuncunun hesabına GİRİŞ YAPTIĞINI gösteren elementData adları.
+    --
+    -- Giriş yapmış ve yetkisi olmayan bir oyuncunun kendi event'iyle kendine
+    -- admin seviyesi vermesi (staff paneli açığı) bu bilgiyle ayırt edilir.
+    -- "account:id", "account:loggedin", "loggedin", "dbid" gibi yaygın adlar
+    -- zaten tanınır; boş bırakırsanız bunlar kullanılır. Sisteminiz farklı
+    -- bir ad kullanıyorsa buraya yazın.
+    -- Örnek:  girisAnahtarlari = { "hesapNo", "girisYapti" },
+    girisAnahtarlari = {
+    },
+
+    -- Yetkililer uçma / ışınlanma gibi admin araçlarını kullanırken hareket
+    -- ve araç denetimlerinden muaf tutulsun mu?
+    yetkiliHareketMuafiyeti = true,
 
 
     -- ======================================================================
@@ -372,14 +431,18 @@ ACAyarlar = {
     -- bazı bilgileri oyuncu tarafından yazıyor olabilir. Onları listeye
     -- eklemezseniz o özellikler çalışmaz. (Oyuncu ceza almaz, o bilgi
     -- sadece kaydedilmez.)
-    -- kur.bat bütün etkin client kaynaklarını eksiksiz okuyabildiğinde
-    -- serbestAnahtarlar listesini üretip bu ayarı otomatik true yapar.
-    -- Okunamayan veya çözülemeyen dinamik kullanım varsa sistemi bozmamak
-    -- için false bırakır ve dosya adını kurulum raporunda gösterir.
-    tumVerileriKoru = false,
+    -- "otomatik" (önerilen): anti-cheat açılışta bütün client script'lerini
+    -- okur. Hepsi eksiksiz okunabiliyorsa (derlenmiş .luac veya adı
+    -- değişkenle üretilen veri yoksa) B yolunu kendiliğinden açar ve
+    -- client script'lerinizin yazdığı anahtarları kendisi serbest bırakır.
+    -- Okunamayan bir şey varsa sistemi bozmamak için A yolunda kalır.
+    -- true = her durumda B yolu, false = her durumda A yolu.
+    tumVerileriKoru = "otomatik",
 
     -- Oyuncunun kendi üzerinde değiştirmesinde sakınca olmayan bilgiler.
     -- Genelde AFK durumu, menü açık mı gibi zararsız şeylerdir.
+    -- Client script'lerinizin yazdığı anahtarlar zaten otomatik serbesttir;
+    -- buraya yalnız derlenmiş (.luac) script'lerin yazdıklarını ekleyin.
     -- Örnek:  serbestAnahtarlar = { "player:afk", "ui:menuAcik" },
     serbestAnahtarlar = {
     },

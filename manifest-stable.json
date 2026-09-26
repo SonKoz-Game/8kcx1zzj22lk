@@ -1,34 +1,78 @@
-﻿{
-    "version":  "1.1.42",
-    "baseUrl":  "https://raw.githubusercontent.com/SonKoz-Game/8kcx1zzj22lk/main/files/",
-    "files":  [
-                  {
-                      "path":  "assets/fonts/SF-Regular.otf",
-                      "sha256":  "1b7b9796494e5b16467460c8b26e9fdca347f0383fbfc92feae0447586b12c15"
-                  },
-                  {
-                      "path":  "assets/fonts/SF-Semibold.otf",
-                      "sha256":  "78e466c8c394bf240fe86292184106eca645a25c8d112d02f2e2c0257ddc53fd"
-                  },
-                  {
-                      "path":  "config.ornek.lua",
-                      "sha256":  "3f9f9337754a10c395de9dc202fdb5468f75f2f59bc36e504fccb4bfc5c44ac3"
-                  },
-                  {
-                      "path":  "lua/client/bundle.lua",
-                      "sha256":  "03fc24c66082b23e91b08dfd23f78eaa60793c9462e754256422ced8dae14d20"
-                  },
-                  {
-                      "path":  "lua/server/bundle_001.lua",
-                      "sha256":  "921c62dbc8278b8638368a0a0d738354e9acaca9ef4fb939774b993e0e46f5fa"
-                  },
-                  {
-                      "path":  "lua/server/bundle_002.lua",
-                      "sha256":  "3ac8b34e880c2eedeac65310b3b3bf4f4919fc20ffd41af76fe94ce5779f9bed"
-                  },
-                  {
-                      "path":  "meta.xml",
-                      "sha256":  "bcefd51dee8c2e1255d55cf71e4b764da4ccf13d87bab5dd192127ffc9c4567b"
-                  }
-              ]
+{
+  "version": "2.0.1",
+  "baseUrl": "https://raw.githubusercontent.com/SonKoz-Game/8kcx1zzj22lk/main/files/",
+  "files": [
+    {
+      "path": "assets/fonts/SF-Regular.otf",
+      "sha256": "1b7b9796494e5b16467460c8b26e9fdca347f0383fbfc92feae0447586b12c15"
+    },
+    {
+      "path": "assets/fonts/SF-Semibold.otf",
+      "sha256": "78e466c8c394bf240fe86292184106eca645a25c8d112d02f2e2c0257ddc53fd"
+    },
+    {
+      "path": "config.ornek.lua",
+      "sha256": "220cfa6bb8659cdb569701e1795f087aaef33a28e480f7a607785a27bf579fd2"
+    },
+    {
+      "path": "lua/client/bundle.lua",
+      "sha256": "c86dbfbef68195afb20dec0b662a50a2d1def7ae3d1ceb54af4606df9dd62a82"
+    },
+    {
+      "path": "lua/server/bundle_001.lua",
+      "sha256": "5bc452f88022f92c5f5c4264552d5a6d5c8a64f03f472bc90ce140ffcac7cc9d"
+    },
+    {
+      "path": "lua/server/bundle_002.lua",
+      "sha256": "7044bc5535aa7c644745009cfe5937b6c4be26d9667180ed94adb55844d43764"
+    },
+    {
+      "path": "lua/server/bundle_003.lua",
+      "sha256": "3f90fcbc939d4d31744a21030322437a8314fd0b8b938b22d7473ad12471af2d"
+    },
+    {
+      "path": "lua/server/bundle_004.lua",
+      "sha256": "95c8e2172daa6c6fad46c4bde7174beaeb221158b403a58d3c7fb3be17259642"
+    },
+    {
+      "path": "lua/server/bundle_005.lua",
+      "sha256": "dd63ed6640b76ba8721acc4de98667056a0c8e186045dece4c8230183ab5f15b"
+    },
+    {
+      "path": "lua/server/bundle_006.lua",
+      "sha256": "1d674ed3004c218c6c465e97f5947dace9f1ca0c2f620241d74ae2dd27c38885"
+    },
+    {
+      "path": "lua/server/bundle_007.lua",
+      "sha256": "6a0894a255bff9a7d35b280079f18a4a5db40f8155b66bfb17d68c423722a2a8"
+    },
+    {
+      "path": "lua/server/bundle_008.lua",
+      "sha256": "b20cb88419f99e5210371fbb66364dfe970c4db9c4a94c2d1ae2ad343fd14218"
+    },
+    {
+      "path": "lua/server/bundle_009.lua",
+      "sha256": "34f892bf0abd38871889ae1fbd07a1c246846b8d7ca5cc46db475cad689167be"
+    },
+    {
+      "path": "lua/server/bundle_010.lua",
+      "sha256": "59d0701f09bd41daefe2b352230cd0a7a02f603260e7fe884adae3c932e6c519"
+    },
+    {
+      "path": "lua/server/bundle_011.lua",
+      "sha256": "828455c5b06c7e5474f061c927a2d10eff5acdc83d9ee8d9a69510a9d58c7acb"
+    },
+    {
+      "path": "lua/server/bundle_012.lua",
+      "sha256": "1c3e7d23f181e8cc81732cdb50c7b36d312ade58236e37a0fde21d13ac61299d"
+    },
+    {
+      "path": "lua/server/bundle_013.lua",
+      "sha256": "70cf655db6bcc5f0c1c5b8356607b46bd191a46ce4bafc2c2c62fc736794feb4"
+    },
+    {
+      "path": "meta.xml",
+      "sha256": "cddb6f125a67069f34bc14939384eb0555fd18ea136763374cfd9d7e6d7a41f3"
+    }
+  ]
 }
