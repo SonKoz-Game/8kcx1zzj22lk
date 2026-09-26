@@ -96,13 +96,15 @@ ACAyarlar = {
     sonsuzMermiKorumasi = true,
     silahSahiplikKorumasi = true,
 
-    -- Oyuncu, elinde olmayan bir silahla bomba veya roket patlatıyor mu?
+    -- Oyuncu, elinde olmayan bir silahla bomba veya roket projectile'i yaratıyor mu?
     -- Sunucudaki herkesi çökertmek için bozuk patlama paketi gönderiyor mu?
     -- Uzaktan patlama yaratıyor mu, patlama yağmuru yapıyor mu?
     --
     -- Bu koruma bozuk paketi RAPOR ETMEKLE KALMAZ, oyuna girmeden iptal eder
-    -- ve elinde bomba olmayan birini İLK denemede yakalar; birkaç bomba
-    -- patlamasını beklemez.
+    -- ve silahı olmayan oyuncunun projectile paketini ilk denemede engeller.
+    -- Patlamayı bildiren oyuncu, patlamayı yapan kişi olmak zorunda değildir;
+    -- yalnız silahı yok diye kick verilmez. Hasarlı uçakların doğal patlamaları
+    -- da silah hilesi sayılmaz; bozuk paket, mesafe ve flood kontrolleri sürer.
     -- Normal el bombası, roket ve satchel kullanımı etkilenmez. Hunter,
     -- Rhino ve Hydra kullanan oyuncular da etkilenmez.
     patlamaKorumasi = true,
