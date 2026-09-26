@@ -1,5 +1,5 @@
 {
-  "version": "2.0.3",
+  "version": "2.0.4",
   "baseUrl": "https://raw.githubusercontent.com/SonKoz-Game/8kcx1zzj22lk/main/files/",
   "files": [
     {
@@ -20,7 +20,7 @@
     },
     {
       "path": "lua/server/bundle_001.lua",
-      "sha256": "0bfbd104c327d08333fc95a167bbc6aaa5f834ba1cbe2c5a95721aa7b0cdfd0b"
+      "sha256": "27276697a1293852f5b38267c3e64d9a15fd1d6c73e7517f3c2be27731c6665b"
     },
     {
       "path": "lua/server/bundle_002.lua",
@@ -36,11 +36,11 @@
     },
     {
       "path": "lua/server/bundle_005.lua",
-      "sha256": "f99f13b7c1a993f3d3ec20ce02a48c2cf4ccc0d9a2842eacbff5828908aad492"
+      "sha256": "10503e2729e663570f61b62c8adbc8354e9f3271905b8fb4b0379551cdf122c4"
     },
     {
       "path": "lua/server/bundle_006.lua",
-      "sha256": "1d674ed3004c218c6c465e97f5947dace9f1ca0c2f620241d74ae2dd27c38885"
+      "sha256": "7bc901df15f45538542407f9086469d3ab970c5e43f198d45f4d3aa7aec549c3"
     },
     {
       "path": "lua/server/bundle_007.lua",
@@ -52,7 +52,7 @@
     },
     {
       "path": "lua/server/bundle_009.lua",
-      "sha256": "c51a0d87315b997cab1387912abf998c140c87ee42edb7e280f867b1c950f78d"
+      "sha256": "d13438f7837dee36b5d0ccc9b2065a2c8bd1d47a88a0ff1433c59638f373c46f"
     },
     {
       "path": "lua/server/bundle_010.lua",
@@ -60,7 +60,7 @@
     },
     {
       "path": "lua/server/bundle_011.lua",
-      "sha256": "7a3eace18e85cf3aa750962e8051af35df0fd0d5bc4ddf3dfe5ed9f2d9e4b1e1"
+      "sha256": "d2ce60420d56a9d5cc2a97787a9f2dfc00c889f184caa61e3a730bbcbeb89dc9"
     },
     {
       "path": "lua/server/bundle_012.lua",
@@ -68,7 +68,7 @@
     },
     {
       "path": "lua/server/bundle_013.lua",
-      "sha256": "143e7ea76bfd38ced6174366208af38d9eebeac592903b3b1ca4d933eb59fcf0"
+      "sha256": "71cf6409e1e7624023fac68b4d867dc8a38607f771e963b445e576f02e85c263"
     },
     {
       "path": "meta.xml",
