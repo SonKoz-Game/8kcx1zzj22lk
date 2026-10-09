@@ -1,5 +1,5 @@
 {
-  "version": "2.0.5",
+  "version": "2.0.7",
   "baseUrl": "https://raw.githubusercontent.com/SonKoz-Game/8kcx1zzj22lk/main/files/",
   "files": [
     {
@@ -12,63 +12,63 @@
     },
     {
       "path": "config.ornek.lua",
-      "sha256": "bbe9193f7fa15dfe249cdc7d7453c44d68b233db3412c06ed5f97011e9fc8713"
+      "sha256": "1a0c3bf0fb0fe7ab9a025ddbad3b63f0aef7e539471a0e85b205f1ecca92a17b"
     },
     {
       "path": "lua/client/bundle.lua",
-      "sha256": "14db30b8c9e094f6af32b89a16ceca42fea3a6133c24951b85d307a03046596f"
+      "sha256": "b060f44d11dcac8df6f46cfc92085e24bfd1a344c78f04d84351f4b6feff7671"
     },
     {
       "path": "lua/server/bundle_001.lua",
-      "sha256": "a89e55172890a14e436fd3ee3c60bf0037db9f848924169f118b7262dd81a67d"
+      "sha256": "04cd918557249029c4b010f41fdd3a0e01589560cf34649a3fdda530c4fa4d06"
     },
     {
       "path": "lua/server/bundle_002.lua",
-      "sha256": "0ba703b626a3ccdd260b7849abe61306d5269858ac97c9799bdb1c986f760539"
+      "sha256": "7da431d9e76035d7a398ef9461972a8f010b77987f21cb39a3039bcb100cf220"
     },
     {
       "path": "lua/server/bundle_003.lua",
-      "sha256": "4ef7bc786fa6ae78ef18737d3979808d087c063d6c2eb4d6fd5bd5ee2ff706a2"
+      "sha256": "660686942fdb2605b40b18d737c494009f6fe7df70b3aed99cc7f196b5a35f53"
     },
     {
       "path": "lua/server/bundle_004.lua",
-      "sha256": "7da89f0ad64defe3c8110df35c8937ef1f2716294222e8266de76e6a5b97cd7b"
+      "sha256": "f6a51e6963b70125b83629c475ee3c2815aa8dd89f69eb1b75b96ca2caca2c44"
     },
     {
       "path": "lua/server/bundle_005.lua",
-      "sha256": "64619e7c623d0ce6cd6bdd754ede51da6eb431a1a2092c9b7b098f4af189772c"
+      "sha256": "3f8609e9a0ea0ffab7dff0b811bb6a2c82a7f98ffe50ca611243e5cf76f78138"
     },
     {
       "path": "lua/server/bundle_006.lua",
-      "sha256": "957b7359bcfab6b50ba01acf8d39f44a8e8735683ace7425774d585a3a946350"
+      "sha256": "1d128191a3e4e182ba0487e4335517a23ecd575cff57c0f66aa8a04036498c80"
     },
     {
       "path": "lua/server/bundle_007.lua",
-      "sha256": "149985e623c069e8804934ca11b1facec08a643f6bae60f0bff155b0407b7f55"
+      "sha256": "bbf947a33ddc39018435d3f2fb9a9f8507f92cc7d5fa2e2a44b67c9af47f3762"
     },
     {
       "path": "lua/server/bundle_008.lua",
-      "sha256": "59e4626a3a89aa3b2afefaf9e668cb7d53e6f1e02b63a384a233be974cdc85de"
+      "sha256": "eb889b33b897f20ba021b764b87f39d468fdade2d5c026383beac70386e524bd"
     },
     {
       "path": "lua/server/bundle_009.lua",
-      "sha256": "fce6081ef932b6df7d00931a1b203427d3b6e601842869782bd944d5a2b4569e"
+      "sha256": "b30ade48369608968e879ecdc77abb5d23a6015b4f3bbf144f692491cd617312"
     },
     {
       "path": "lua/server/bundle_010.lua",
-      "sha256": "a6f43b717f1ce612d77a588e7712567c02c964dae6ff112d5b0ac62bcad9cdda"
+      "sha256": "8f69d8e3bac5900856d0169742cf45d5db341b4635869b3010f0a86fdf370611"
     },
     {
       "path": "lua/server/bundle_011.lua",
-      "sha256": "f625f56f393a77e07e88b7ab9817e71863e1b795cdd45a3e4c635c5a744110ca"
+      "sha256": "514c61be01bd6a30581dd25a08c8c4bbb0fab0e2daf96a3ad9584288cfb17468"
     },
     {
       "path": "lua/server/bundle_012.lua",
-      "sha256": "562716d60ae2c5a9816cee5dc5a7d02f6caed1e29c36ac9558c11ab91cef96da"
+      "sha256": "773ed0908b10512bfe0326a3b37314b6c0d7725f6bf73bf1ed40ef7ff7eae21e"
     },
     {
       "path": "lua/server/bundle_013.lua",
-      "sha256": "5a84d183097b6f603e258be88f1ac69cb621e65311b7cc9445f86df9dfdef299"
+      "sha256": "4eb6def0a4da65aaafd5294885413a0b30452dbb2c00992b95674dc11eecf744"
     },
     {
       "path": "meta.xml",

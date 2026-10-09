@@ -224,7 +224,10 @@ ACAyarlar = {
     eventHizAniPay = 4,            -- kisa paket yigilmalarina ek adet payi
     eventHizDogrulamaPenceresi = 2,
     eventHizOgrenmeOncesiTavan = 12,
-    eventHizGenelTavan = 120,
+    -- Oyuncunun tum eventleri icin saniyelik acil paket butcesi. Devam eden
+    -- tasmada fazla paketler dusurulur; bu sayac oyuncuya kick/ban vermez.
+    -- "rapor" modunda paket dusmez. Eski eventHizGenelTavan artik kullanilmaz.
+    eventHizPaketTavani = 1000,
 
     -- /me gibi server komutlarının tek karede onlarca kez çalıştırılmasını
     -- engeller. Normal kullanım etkilenmez; aşırı taşmada oyuncu atılır.
